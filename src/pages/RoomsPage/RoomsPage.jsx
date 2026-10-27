@@ -2,23 +2,23 @@ import RoomsGrid from "./RoomsGrid";
 
 function RoomsPage() {
   const rooms = [{
-    id: crypto.randomUUID(),
+    id: "anime",
     name: "Anime",
     description: "let's talk about Anime",
   }, {
-    id: crypto.randomUUID(),
+    id: "one-piece",
     name: "One-Piece",
     description: "Let's talk about One Piece",
   }, {
-    id: crypto.randomUUID(),
+    id: "video-games",
     name: "Video-games",
     description: "What's the best video games out there",
   }, {
-    id: crypto.randomUUID(),
+    id: "books",
     name: "Books",
     description: "Books Recommendations",
   }, {
-    id: crypto.randomUUID(),
+    id: "music",
     name: "Music",
     description: "Give and get Music Recommendations",
   }];
