@@ -23,6 +23,7 @@ function RoomsPage() {
     description: "Give and get Music Recommendations",
   }];
 
+  
   return (
     <div className="rooms-page">
       <RoomsGrid rooms={rooms} />

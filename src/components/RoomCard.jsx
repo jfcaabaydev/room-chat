@@ -1,15 +1,7 @@
-import { useNavigate } from "react-router-dom";
-import { useRoom } from "../context/useRoom";
-
-function RoomCard({room}) {
-  const navigate = useNavigate();
-  const { setSelectedRoom } = useRoom();
+function RoomCard({ room, onClick}) {
 
   return (
-    <div className="room-card" onClick={() => { 
-      setSelectedRoom(room);
-      navigate("/chat");
-    }}>
+    <div className="room-card" onClick={() => onClick(room)}>
       <h3>{room.name}</h3>
       <p>{room.description}</p>
     </div>
