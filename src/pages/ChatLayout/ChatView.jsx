@@ -2,9 +2,9 @@ import { useEffect, useState } from "react";
 import { useRoom } from "../../context/useRoom";
 import { collection, query, orderBy, onSnapshot } from "firebase/firestore";
 import { db } from "../../firebase";
+import ChatHeader from "./ChatHeader";
 import MessageList from "./MessageList";
 import InputBar from "./InputBar";
-
 
 
 function ChatView() {
@@ -36,6 +36,7 @@ function ChatView() {
 
   return (
     <div>
+      <ChatHeader selectedRoom={selectedRoom} />
       <MessageList messages={messages}/>
       {roomId && <InputBar />}
     </div>  

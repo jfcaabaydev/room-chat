@@ -4,7 +4,8 @@ function MessageCard({ message }) {
   
   return (
     <div className="message-card">
-      <p>{message.text}</p>
+      <p className="message-username">{message.username}</p>
+      <p className="message-text">{message.text}</p>
     </div>
   );
 }
