@@ -1,5 +1,39 @@
 /* index.css */
 
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&family=Inter:wght@300;400;500;600&display=swap');
+
+/* Inter — clean readable sans-serif for messages and UI */
+/* JetBrains Mono — monospace for room names, usernames, technical feel */
+
+:root {
+  /* backgrounds */
+  --bg-base: #0F1117;        /* darkest — page background */
+  --bg-surface: #1A1D27;     /* slightly lighter — sidebar, cards */
+  --bg-elevated: #21253A;    /* elevated surfaces — chat area, inputs */
+  --bg-message: #252A3D;     /* message bubbles */
+
+  /* text */
+  --text-primary: #E8EAF0;   /* main text */
+  --text-secondary: #9AA0B8; /* secondary — descriptions, timestamps */
+  --text-muted: #5C6380;     /* muted — placeholders */
+  --text-on-accent: #000;    /* button text */
+
+  /* accent — amber */
+  --accent: #F59E0B;
+  --accent-hover: #D97706;
+  --accent-soft: rgba(245, 158, 11, 0.15);
+
+  /* borders */
+  --border: #2A2F45;
+  --border-soft: #1E2235;
+
+  /* shadows */
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.3);
+
+  color-scheme: dark;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -7,5 +41,16 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg-base);
+  color: var(--text-primary);
   min-height: 100vh;
+}
+
+button, input {
+  font: inherit;
+}
+
+button {
+  color: inherit;
 }
