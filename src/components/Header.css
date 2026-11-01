@@ -76,12 +76,13 @@
   outline-offset: 2px;
 }
 
+
 @media (max-width: 480px) {
   .header-brand {
     gap: 0.35rem;
   }
 
   .header-app-name {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
   }
 }
