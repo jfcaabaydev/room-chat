@@ -1,0 +1,32 @@
+/* ChatLayout */
+
+.chat-layout {
+  display: grid;
+  grid-template-columns: 240px minmax(0, 1fr);
+  grid-template-rows: auto 1fr;
+  height: 100dvh;
+}
+
+.sidebar-closed {
+  grid-template-columns: minmax(0, 1fr); 
+}
+
+.sidebar-closed .rooms-view {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .chat-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .rooms-view {
+    position: fixed;
+    top: 4.5rem;
+    bottom: 0;
+    left: 0;
+    width: min(240px, 85vw);
+    z-index: 10;
+    box-shadow: var(--shadow);
+  }
+}
