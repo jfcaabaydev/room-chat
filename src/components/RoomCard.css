@@ -1,0 +1,33 @@
+/* RoomCard.css */
+
+.room-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  border: solid 1px var(--border-soft);
+  border-left: 2px solid transparent;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.room-card:hover {
+  background: var(--bg-elevated);
+}
+
+.room-card.active {
+  border-left-color: var(--accent);
+  background: var(--accent-soft);
+}
+
+.room-name {
+ font-family: 'JetBrains Mono', monospace;
+ font-size: 1.1rem;
+ font-weight: 500;
+}
+
+.room-description {
+  margin-top: 4px;
+  line-height: 1.4;
+  color: var(--text-secondary);
+}
