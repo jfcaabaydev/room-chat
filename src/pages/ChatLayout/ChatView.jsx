@@ -5,6 +5,7 @@ import { db } from "../../firebase";
 import ChatHeader from "./ChatHeader";
 import MessageList from "./MessageList";
 import InputBar from "./InputBar";
+import './ChatView.css';
 
 
 function ChatView() {
@@ -35,7 +36,7 @@ function ChatView() {
 
 
   return (
-    <div>
+    <div className="chat-view">
       <ChatHeader selectedRoom={selectedRoom} />
       <MessageList messages={messages}/>
       {roomId && <InputBar />}
