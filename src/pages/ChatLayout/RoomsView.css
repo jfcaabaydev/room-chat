@@ -1,0 +1,12 @@
+/* RoomsView */
+
+.rooms-view {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: flex-start;
+  gap: 0.5rem;
+  padding: 1rem 0.3rem;
+  min-height: 0;
+  overflow-y: auto;
+  background: var(--bg-surface);
+}
