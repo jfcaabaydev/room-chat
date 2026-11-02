@@ -9,3 +9,12 @@
   min-height: 0;
   overflow-y: auto;
 }
+
+.message-list-empty {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--text-secondary);
+}

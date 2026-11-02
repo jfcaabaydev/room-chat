@@ -15,6 +15,7 @@ function MessageList({ messages }) {
       {messages.map((message) => (
         <MessageCard key={message.id} message={message} />
       ))}
+      {messages.length === 0 && <p className="message-list-empty">Be the first person to message!</p>}
       <div ref={bottomRef} />
     </div>
   );
