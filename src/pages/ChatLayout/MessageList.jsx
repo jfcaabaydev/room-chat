@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
 import MessageCard from "./MessageCard";
+import './MessageList.css';
+
 
 function MessageList({ messages }) {
   const bottomRef = useRef(null);

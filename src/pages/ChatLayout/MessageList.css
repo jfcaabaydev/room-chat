@@ -1,0 +1,11 @@
+/* MessageList */
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.2rem;
+  flex: 1;
+  min-height: 0;
+  overflow-y: auto;
+}
