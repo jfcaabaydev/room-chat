@@ -3,6 +3,8 @@ import { collection, addDoc, serverTimestamp } from "firebase/firestore";
 import { useAuth } from "../../context/useAuth";
 import { useRoom } from "../../context/useRoom";
 import { db } from "../../firebase";
+import './InputBar.css';
+
 
 function InputBar() {
   const [value, setValue] = useState(""); // controlled input value
