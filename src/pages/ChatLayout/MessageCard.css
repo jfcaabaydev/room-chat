@@ -1,0 +1,43 @@
+/* MessageCard */
+
+.message-card-user,
+.message-card-member {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  max-width: 70%;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  background: var(--bg-message);
+}
+
+.message-card-user {
+  align-self: flex-end;
+  background: var(--accent-soft);
+  border: 1px solid var(--accent);
+}
+
+.message-card-member {
+  align-self: flex-start;
+  border: 1px solid var(--accent-soft);
+}
+
+.message-username {
+  margin-bottom: 0.25rem;
+  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', monospace;
+  color: var(--accent);
+  overflow-wrap: anywhere;
+}
+
+.message-text {
+  overflow-wrap: anywhere;
+}
+
+@media (max-width: 480px) {
+  .message-card-user,
+  .message-card-member {
+    max-width: 80%;
+    padding: 0.75rem;
+  }
+}
