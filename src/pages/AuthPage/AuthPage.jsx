@@ -1,4 +1,5 @@
 import Authform from "./AuthForm.jsx";
+import './AuthPage.css'
 
 function AuthPage() {
   return (
