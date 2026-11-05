@@ -1,0 +1,17 @@
+/* RoomsGrid.css */
+
+.rooms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.rooms-grid .room-card {
+  background: var(--bg-surface);
+  transition: 0.2s ease;
+}
+
+.rooms-grid .room-card:hover {
+  border: 1px solid var(--accent);
+  background: var(--bg-elevated);
+}
