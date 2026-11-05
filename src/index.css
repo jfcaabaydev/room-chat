@@ -17,6 +17,7 @@
   --text-secondary: #9AA0B8; /* secondary — descriptions, timestamps */
   --text-muted: #5C6380;     /* muted — placeholders */
   --text-on-accent: #000;    /* button text */
+  --error: #F87171; /* error text */
 
   /* accent — amber */
   --accent: #F59E0B;
