@@ -1,4 +1,5 @@
 import RoomsGrid from "./RoomsGrid";
+import "./RoomsPage.css";
 
 function RoomsPage() {
   const rooms = [{
@@ -26,9 +27,13 @@ function RoomsPage() {
   
   return (
     <div className="rooms-page">
+      <div className="rooms-page-heading">
+        <p className="rooms-page-heading-title">FIND YOUR PEOPLE</p>
+        <p className="rooms-page-heading-desc">Talk to people with the things you love.</p>
+      </div>
       <RoomsGrid rooms={rooms} />
     </div>
   );
-}
+} 
 
 export default RoomsPage;

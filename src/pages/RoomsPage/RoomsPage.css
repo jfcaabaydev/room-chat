@@ -1,0 +1,23 @@
+/* RoomsPage.css */
+
+.rooms-page {
+  max-width: 64rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.rooms-page-heading {
+  margin-bottom: 2rem;
+}
+
+.rooms-page-heading-title {
+  margin-bottom: 0.25rem;
+  font-size: 2rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.rooms-page-heading-desc {
+  color: var(--text-secondary);
+}
